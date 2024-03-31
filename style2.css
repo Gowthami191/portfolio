@@ -1,0 +1,168 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Header Section */
+#top {
+    background-color: #30475e;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.p1 {
+    margin-bottom: 20px;
+}
+
+.inte {
+    margin-top: 20px;
+}
+
+.inte ul {
+    list-style: none;
+    padding: 0;
+}
+
+.inte li {
+    margin-bottom: 10px;
+}
+
+/* About Section */
+#about {
+    background-color: #ececec;
+    padding: 50px 0;
+}
+
+.c1 {
+    flex-basis: 60%;
+}
+
+.hh1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.pp1 {
+    color: #555;
+    line-height: 1.6;
+}
+
+.title {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    padding: 10px;
+    width:150px;
+    border: 2px solid #30475e; /* Blue color from the header */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Add transitions */
+    display: flex;
+    justify-content: center;
+}
+
+.box:hover {
+    background-color: #30475e; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Add active styles for clicked box */
+.acti {
+    background-color: #fff; /* Change background color when clicked */
+    color: #30475e; /* Change text color when clicked */
+    border-color: #fff; /* Change border color when clicked */
+}
+
+.lin-content {
+    display: none;
+}
+
+.lin-content.active {
+    display: block;
+}
+
+/* Services Section */
+#services {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-list div {
+    flex-basis: 30%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.service-list div:hover {
+   /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); */
+   background: #30475e;
+   color:white;
+    transform: translate(-20px);
+}
+
+
+/* Contact Section */
+#contact {
+    background-color: #30475e;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row p {
+    margin: 0;
+}
+
+.social a {
+    color: #fff;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: #f9f9f9;
+}
+
+.bu {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #30475e;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bu:hover {
+    background-color: #f9f9f9;
+    color: #333;
+}
